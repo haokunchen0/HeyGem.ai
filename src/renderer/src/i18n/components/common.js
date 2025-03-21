@@ -7,7 +7,8 @@ import { Button } from 'tdesign-vue-next'
 // 中文翻译
 export const commonZh = {
   menu: {
-    text: '首页'
+    text: '首页',
+    modelCreate: '数字人\n定制'
   },
   header: {
     minimizeText: '最小化',
@@ -94,12 +95,16 @@ export const commonZh = {
     faceHalf: '五官遮挡',
     videoName: '视频名称'
   },
+  modelCreateBatch: {
+    title: '数字人定制',
+    dragTips: '也可以拖拽多个视频文件到此处'
+  },
   selectView: {
     selectHeaderText: '模特列表',
     generateButtonText: '立即定制',
     modalFinishedObj: {
       text1: '请移至',
-      text2: '“首页-我的作品”',
+      text2: '"首页-我的作品"',
       text3: '中查看制作结果～',
       rightBtnText: '再创建一个',
       progressBtnText: '去看制作进度',
@@ -134,7 +139,8 @@ export const commonZh = {
 // 英文翻译
 export const commonEn = {
   menu: {
-    text: 'Home'
+    text: 'Home',
+    modelCreate: 'Avatar\nCreator'
   },
   header: {
     minimizeText: 'Minimize',
@@ -169,7 +175,7 @@ export const commonEn = {
     makeFailedText: 'Failed',
     draftsText: 'Drafts',
     underProduction: 'Generating, please wait for a moment.',
-    queuing: 'In the queue, please wait  for a moment.',
+    queuing: 'In the queue, please wait  for a moment.',
     emptyText: "You don't have any video works yet",
     emptyLinkRouteText: 'click here',
     emptyRightText: 'to Create Video.'
@@ -191,7 +197,7 @@ export const commonEn = {
   },
   message: {
     deleteErrorText: 'Failed',
-    deleteSuccessText: 'Successful',
+    deleteSuccess: 'Deleted Successfully',
     videoUploadError: 'Video Upload Failed',
     videoLength: 'Video length ≥ 8s',
     videoContentText: 'Please enter the text content',
@@ -199,7 +205,9 @@ export const commonEn = {
     VideoTextError: 'Please enter the video name',
     VideoCopywritingTextError: 'Please enter the video copy',
     videoSynthesisTextError: 'Video Create failed, please try again later',
-    initEditVideoPageFailed: 'Failed to initialize video editing page, please try again later'
+    initEditVideoPageFailed: 'Failed to initialize video editing page, please try again later',
+    noVideoSelected: 'Please select video files',
+    deleteFailed: 'Delete failed'
   },
   modelCreateView: {
     headerTitle: 'Rapid customization',
@@ -220,6 +228,10 @@ export const commonEn = {
     faceNo: 'No face',
     faceHalf: 'Face is obscured',
     videoName: 'video name'
+  },
+  modelCreateBatch: {
+    title: 'Avatar Creator',
+    dragTips: 'Or drag multiple video files here'
   },
   selectView: {
     selectHeaderText: 'My Avatars',

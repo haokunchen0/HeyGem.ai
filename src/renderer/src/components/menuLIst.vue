@@ -17,6 +17,8 @@ import { reactive, watch, computed } from 'vue'
 import onIcon from '../assets/images/home/menu/onHome.svg'
 import activeIcon from '../assets/images/home/menu/active.svg'
 import offIcon from '../assets/images/home/menu/offHome.svg'
+import onModelIcon from '../assets/images/home/menu/onModel.svg'
+import offModelIcon from '../assets/images/home/menu/offModel.svg'
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 const unRoute = useRoute()
@@ -29,6 +31,14 @@ const obj = [
     offIcon,
     active: true,
     path: '/home'
+  },
+  {
+    key: 'common.menu.modelCreate',
+    name: t('common.menu.modelCreate') || '数字人定制',
+    onIcon: onModelIcon,
+    offIcon: offModelIcon,
+    active: false,
+    path: '/model-create'
   }
   /* {
       name: "账号",
@@ -101,6 +111,7 @@ const handleClick = (item) => {
         color: #9097a5;
         line-height: 14px;
         margin-top: 3px;
+        white-space: pre-line;
       }
     }
   }
